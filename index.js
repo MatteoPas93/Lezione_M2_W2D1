@@ -10,9 +10,9 @@ let primoNumero = 10
 let secondoNumero = 7
 
 if(primoNumero > secondoNumero) {
-    console.log (primoNumero, "è maggiore di", secondoNumero)
+    console.log(primoNumero, "è maggiore di", secondoNumero)
 } else if (primoNumero < secondoNumero) {
-    console.log (primoNumero, "è minore di", secondoNumero)
+    console.log(primoNumero, "è minore di", secondoNumero)
 }
 
 /*
@@ -30,19 +30,19 @@ ESERCIZIO 2
 let num = 4
 
 if (num <5) {
-    console.log ("Tiny")
+    console.log("Tiny")
 
 } else if (num <10) {
-    console.log ("Small")
+    console.log("Small")
 
 } else if (num <15) {
-    console.log ("Medium")
+    console.log("Medium")
 
 } else if (num <20) {
-    console.log ("Large")
+    console.log("Large")
 
 } else if (num >=20) {
-    console.log ("Huge")
+    console.log("Huge")
 
 }
 
@@ -62,7 +62,7 @@ if (num <5) {
 for (let i = 0 ; i <= 10 ; i++) {
     if (i === 3  ||  i === 8) {
       continue }
-console.log (i)
+console.log(i)
 }
 
 /* ESERCIZIO 11
@@ -72,9 +72,9 @@ console.log (i)
 /* SCRIVI QUI LA TUA RISPOSTA */
 for (let n = 0 ; n <= 15 ; n++) {
     if (n % 2 === 0) {
-        console.log (n +  " Questo numero è pari")
+        console.log(n +  " Questo numero è pari")
     } else {
-        console.log (n +  " Questo numero è dispari")
+        console.log(n +  " Questo numero è dispari")
     }
 }
 
@@ -87,18 +87,18 @@ for (let n = 0 ; n <= 15 ; n++) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 let numeroUno = 20
 let numeroDue = 12
-let risultato = numeroUno - numeroDue
 
+console.log(" Attraverso l'utilizzo di if/else, andremo a stampare solamente la risposta corretta.\n In questo caso numeroUno(20) - numeroDue(12) = 8.")
 
 
 if(numeroUno === 8) {
-    console.log ("numeroUno è 8")
+    console.log("numeroUno è 8")
 } else if (numeroDue === 8) {
-    console.log ("numeroDue è 8")
+    console.log("numeroDue è 8")
 } else if (numeroDue + numeroUno === 8) {
     console.log("numeroDue + numeroUno è 8")
 } else if (numeroUno - numeroDue === 8) {
-    console.log ("numeroUno - numeroDue è 8")
+    console.log("numeroUno - numeroDue è 8")
 }
 
 
@@ -116,11 +116,15 @@ let totalShoppingCart = 60
 
 let spedizione = 10
 
+console.log ( " Se il saldo è maggiore di 50, il valore applicato \n sarà solo quello presente nella variabile totalShoppingCart. \n Altrimenti verrà aggiunto il valore della variabile spedizione. In questo caso \n sarà stampato solo il valore di totalShoppimngCart.") 
+
 if (totalShoppingCart >50 ) {
-   console.log (totalShoppingCart)
+   console.log(totalShoppingCart)
 } else if (totalShoppingCart <=50 ) {
-  console.log (totalShoppingCart + spedizione)
+  console.log(totalShoppingCart + spedizione)
 }
+
+
 
 
 
@@ -130,15 +134,15 @@ if (totalShoppingCart >50 ) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let sconto = 12
+let sconto = ((totalShoppingCart / 100) *20)
 let totale = totalShoppingCart - sconto
 
-
+console.log (" In questo caso il saldo, applicato lo sconto, è minore di 50. \n Al saldo totale viene quindi aggiunto il costo della spedizione.")
 
 if (totale <50) {
-  console.log (totale + spedizione)
+  console.log(totale + spedizione)
 } else if (totale >50) {
-  console.log (totale)
+  console.log(totale)
 }
 
 
@@ -151,7 +155,12 @@ if (totale <50) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 let isMale = true
 
-let gender = isMale ? console.log("male") : console.log("female") 
+let gender = isMale ? "gender is male" : "gender is female"
+
+console.log(gender)
+
+
+
 
 
 
@@ -162,15 +171,18 @@ let gender = isMale ? console.log("male") : console.log("female")
 for (let c = 1 ; c <= 100 ; c++) {
      
   if (c % 3 === 0 && c % 5 === 0) {
-    console.log ("FizzBuzz")
+    console.log("FizzBuzz")
   } 
-  if (c % 3 === 0 ) {
-    console.log ("Fizz")
+  else if (c % 3 === 0 ) {
+    console.log("Fizz")
   }
-  if (c % 5 === 0 ) {
+  else if (c % 5 === 0 ) {
     console.log("Buzz")
   }
-  else (
-    console.log(c)  
-    )
+   else {
+    console.log(c)
   }
+                                 
+}
+
+     
